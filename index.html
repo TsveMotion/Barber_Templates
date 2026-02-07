@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbershop Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Abril+Fatface&family=Oswald:wght@300;400;500;700&family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0a0a0a', // Darker black for luxury
+              secondary: '#d4af37', // More metallic gold
+              background: '#121212',
+              surface: '#1e1e1e',
+              // Modern Theme Colors
+              modern: {
+                dark: '#0f172a',
+                light: '#f8fafc',
+                accent: '#2563eb', 
+                surface: '#ffffff'
+              },
+              // Rustic/Industrial Theme Colors (Iron & Oak)
+              rustic: {
+                bg: '#0c0a09', // stone-950 (Very Dark)
+                card: '#1c1917', // stone-900
+                accent: '#d97706', // amber-600 (Whiskey/Rust)
+                text: '#e7e5e4', // stone-200
+                muted: '#78716c', // stone-500
+              },
+              // Volt/Neon Theme Colors
+              volt: {
+                bg: '#050505',
+                card: '#111111',
+                accent: '#ccff00', // Electric Lime
+                highlight: '#00f3ff', // Cyan
+                text: '#ffffff',
+                muted: '#666666'
+              }
+            },
+            fontFamily: {
+              sans: ['Lato', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              display: ['Abril Fatface', 'cursive'],
+              modern: ['Inter', 'sans-serif'],
+              rustic: ['Oswald', 'sans-serif'],
+              industrial: ['Bebas Neue', 'cursive'],
+              tech: ['Rajdhani', 'sans-serif'],
+            },
+            backgroundImage: {
+              'vintage-texture': "url('https://www.transparenttextures.com/patterns/dark-leather.png')",
+              'barber-pole': "repeating-linear-gradient(45deg, #ef4444, #ef4444 10px, #ffffff 10px, #ffffff 20px, #3b82f6 20px, #3b82f6 30px, #ffffff 30px, #ffffff 40px)",
+              'wood-pattern': "url('https://www.transparenttextures.com/patterns/wood-pattern.png')",
+              'concrete': "url('https://www.transparenttextures.com/patterns/concrete-wall.png')",
+              'grid-pattern': "linear-gradient(to right, #1a1a1a 1px, transparent 1px), linear-gradient(to bottom, #1a1a1a 1px, transparent 1px)"
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      
+      .bg-texture {
+        background-color: #0f0f0f;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      /* Neon Glow Utilities */
+      .glow-text {
+        text-shadow: 0 0 10px rgba(204, 255, 0, 0.5);
+      }
+      .glow-border {
+        box-shadow: 0 0 15px rgba(204, 255, 0, 0.2);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
