@@ -8,7 +8,7 @@ interface SiteSwitcherProps {
 
 export const SiteSwitcher: React.FC<SiteSwitcherProps> = ({ currentTheme, setTheme }) => {
   return (
-    <div className="fixed top-0 left-0 w-full h-14 z-[100] bg-neutral-900 border-b border-neutral-800 flex items-center justify-between px-4 sm:px-8 shadow-2xl">
+    <div className="fixed top-0 left-0 w-full h-14 z-[100] bg-neutral-900 border-b border-neutral-800 flex items-center justify-between px-4 sm:px-8 shadow-2xl font-sans">
       <div className="flex items-center text-neutral-400 text-xs font-bold tracking-widest uppercase hidden sm:flex">
         <Monitor size={14} className="mr-2" />
         Website Demo Mode
